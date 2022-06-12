@@ -1,0 +1,122 @@
+*{
+    margin : 0 ;
+    padding :0 ;
+    box-sizing: 0;
+    font-family: "Trirong", serif;
+}
+/* *************************Header************************** */
+  .softnav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+  }
+  #softcehck{
+    display: none;
+  }
+  #softcehck:checked + ul.main-nav {
+    display: flex;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {margin: 0; list-style: none; }
+  .main-nav li a{text-decoration: none; color: black;}
+  .main-nav li a:hover{color: rgb(175, 52, 52); text-decoration: underline;}
+  .soft-links {margin-left: 40px;  }
+  
+  .softnav-toggle 
+  {
+    display: none; 
+   }
+  .logo:hover,.soft-links:hover 
+  {
+    color: rgba(255, 255, 255, 1);
+  }
+  .logo{
+      padding-top : 20px  ;
+      margin-left : 40px
+  }
+  .logo img{
+      border:0 ;
+      border-radius: 50%;
+      width:15%;
+      height:15%;
+    
+    
+    }
+/* *************************Footer************************** */
+footer{
+    width:100% ;
+    min-height: 50px;
+    margin-top:20px
+}
+footer .icons , 
+footer .copy_right{
+    width:50% ;
+    height: 50px;
+    margin:auto ;
+    text-align: center;  
+    padding-top:20px 
+}
+footer .icons a{
+    text-decoration: none !important;
+}
+footer .icons i{
+    font-size:38px ;
+    margin:10px ;
+    color: black;
+}
+
+@media only screen and (max-width: 60rem){
+
+ /* Header */
+  
+ .softnav {
+   font-size: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+  .main-nav {
+      list-style-type: none;
+      display: none;    
+      background-color: rgb(252, 222, 222);
+      margin-top:250px ;
+      width:100% ;
+      position:absolute
+  }
+  .soft-links,.logo {
+    text-decoration: none;
+    color: #fff;
+  }
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .logo {
+    display: inline-block;
+    font-size: 22px;
+   margin-top: 10px;
+   margin-left: 20px;
+  }
+  .softnav-toggle 
+  {
+    display:block ;
+    position: absolute;
+    top: 10px;right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    color: black;
+}
+  #softcehck {
+    display: none;
+  }
+  #softcehck:checked + ul.main-nav {
+    display: block;
+  }
+  
+}

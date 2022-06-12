@@ -1,0 +1,304 @@
+*{
+    margin : 0 ;
+    padding :0 ;
+    box-sizing: 0;
+    font-family: "Trirong", serif;
+}
+main{
+    width:100% ;
+    min-height: 800px ;
+
+}
+/* *********************************Header****************************** */
+.softnav {display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }#softcehck:checked + ul.main-nav {
+    display: flex;
+  }.main-nav {display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  
+  } .main-nav li {margin: 0;  }
+  .soft-links {margin-left: 40px;  }
+  .logo {margin-top: 0;  }
+  .softnav-toggle {
+    display: none;  }
+  .logo:hover,.soft-links:hover {
+    color: rgba(255, 255, 255, 1);}
+/* *********************************About******************************* */
+.about{
+    width:100% ;
+    min-height: 200px;
+   
+}
+.about div{
+   width:70% ;
+   margin:auto ;
+   min-height: 200px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.about div aside:nth-of-type(1){
+    width:60% ;
+ 
+}
+
+.about div aside:nth-of-type(1) h1:nth-of-type(1) {
+    margin:6px 0 ;
+    font-size: 2vw;
+}
+.about div aside:nth-of-type(1) h1:nth-of-type(2) {
+    margin-bottom:20px ;
+    font-size: 2vw;
+}
+
+.about div aside:nth-of-type(1) p {
+  font-size: 1.2vw;
+  margin-bottom: 20px;
+}
+.about div aside:nth-of-type(1) button{
+    color:white ;
+    background-color: rgb(214, 54, 54);
+    text-transform: capitalize;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px ;
+    margin-bottom: 40px ;
+}
+.about div aside:nth-of-type(2){
+    width:35% ;
+    margin:30px ;
+    text-align: end;
+    
+  
+}
+.about div aside:nth-of-type(2) img{
+    border-radius: 50%;
+    width:180px ;
+    display: inline;
+    margin-left :40px
+}
+/* **********************************Recent-Posts*********************** */
+.recent-posts{
+    min-height: 200px;
+    width:100% ;
+    background-color :rgb(235, 246, 252) ;
+    padding-bottom: 30px;
+}
+.recent-posts  div{
+    min-height: 200px;
+    width : 70% ;
+    margin: auto ;
+    
+}
+.recent-posts div .posts_header{
+    width:100% ;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding : 10px 0 ;
+  
+}
+.recent-posts div .posts_header a {
+    text-decoration: none ;
+}
+.recent-posts div .posts_header span{
+    font-size: 1.5vw;
+}
+.recent-posts div .posts_details{
+    width:100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.recent-posts div .posts_details aside{ 
+    width:44%;
+    background-color: white;
+    border: 2px;
+    border-radius: 3px;
+    padding: 20px ;
+}
+.recent-posts div .posts_details aside h2 ,
+.recent-posts div .posts_details aside p{
+    margin-bottom: 30px;
+}
+/* **********************************Feature-Work*********************** */
+.feature-work{
+    width: 100%;
+    min-height: 400px;
+    padding : 30px 0 ;
+}
+.feature-work div{
+    width:70% ;
+    min-height: 400px;
+    margin: auto;  
+}
+.feature-work div span{
+    font-size: 1.5vw;
+}
+.feature-work div .feature_cards{
+    width:100%;
+    min-height: 350px;
+    margin-top : 20px 
+}
+.feature-work div .feature_cards .card {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding : 10px ;
+    margin-top : 10px ;
+    margin-bottom: 10px;
+}
+.feature-work div .feature_cards .card img {
+    width:20% ;
+    height: 130px;
+    border-radius: 5px;
+
+}
+.feature-work div .feature_cards .card .description{
+    width:70% ;
+    min-height: 120px;
+   
+}
+.feature-work div .feature_cards .card .description p{
+    margin-top : 15px
+}
+.feature-work div .feature_cards .card .description p span:nth-of-type(1){
+    background-color:rgb(46, 45, 45) ;
+    padding: 2px 8px ;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.1vw;
+    margin-right: 20px
+}
+.feature-work div .feature_cards .card .description p span:nth-of-type(2){
+    color:rgb(71, 68, 68) ;
+    font-size: 1.1vw
+}
+.feature-work div .feature_cards hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+
+@media only screen and (max-width: 60rem) {
+   
+    /* About */
+    .about div{
+        width:90% ;
+        margin:auto ;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+     }
+     .about div aside:nth-of-type(1){
+        margin:auto;
+        text-align: center;
+    }
+    .about div aside:nth-of-type(1) h1:nth-of-type(1) ,
+    .about div aside:nth-of-type(1) h1:nth-of-type(2) {
+        font-size: 5vw;
+    }
+
+    .about div aside:nth-of-type(1) p {
+        font-size: 3vw;
+        margin-bottom: 30px;
+      }
+   .about div aside:nth-of-type(1) button{
+          font-size: 3vw;
+          text-align: center;
+      }
+    .about div aside:nth-of-type(2){
+        width:90% ; 
+    }
+    .about div aside:nth-of-type(2) img{
+        width:30% ;
+        display: block;
+        margin : 0 auto ;
+    }
+    /* Recent-Posts */
+    .recent-posts  div{
+        min-height: 200px;
+        width : 90% ;
+        margin: auto ;
+        
+    }
+    .recent-posts div .posts_header{
+        width:100% ;
+        min-height: 30px;
+        display: flex;
+        flex-direction: column;
+        padding : 10px 0 ;
+        text-align: center;
+      
+    }
+    .recent-posts div .posts_header span{
+        font-size: 5vw;
+    }
+    .recent-posts div .posts_details{
+        width:100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+     
+    }
+    .recent-posts div .posts_details aside{ 
+        width:90%;
+        background-color: white;
+        border: 2px;
+        border-radius: 3px;
+        padding: 20px ;
+        margin-bottom: 10px;
+    }
+    /*  Feature Work */
+    .feature-work div{
+        width:90% ;
+       
+    }
+    .feature-work div span{
+        font-size: 5vw;
+        display: block;
+        text-align: center;
+    }
+    .feature-work div .feature_cards .card {
+        flex-direction: column;
+        padding : 10px ;
+        margin-top : 10px ;
+        margin-bottom: 10px;
+    }
+    .feature-work div .feature_cards .card img {
+        width:90% ;
+        height:220px ;
+        display: block;
+        margin-bottom: 15px;    
+    }
+    .feature-work div .feature_cards .card .description{
+        width:90% ;
+        min-height: 120px;
+       
+    }
+    .feature-work div .feature_cards .card .description p span:nth-of-type(1){
+        background-color:rgb(46, 45, 45) ;
+        padding: 2px 8px ;
+        color: white;
+        border-radius: 15px;
+        font-size: 3vw;
+        display: inline;
+    }
+    .feature-work div .feature_cards .card .description p span:nth-of-type(2){
+        color:rgb(71, 68, 68) ;
+        font-size: 3vw ;
+        display: inline;
+    }
+  }

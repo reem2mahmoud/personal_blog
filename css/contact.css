@@ -1,0 +1,135 @@
+*{
+    margin : 0 ;
+    padding :0 ;
+    box-sizing: 0;
+    font-family: "Trirong", serif;
+}
+main{
+    width:100% ;
+    margin-top: 20px ;
+}
+/******************************************Contact **************************************/
+main section{
+    width :70% ;
+    min-height: 300px;
+    margin : auto ;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+main section .contact_details{
+    width: 30%;
+    margin:40px ;
+    padding : 0 20px ;  
+   
+}
+main section .contact_details img{
+    width:55% ;
+    height:55%
+}
+main section .contact_details #email ,
+main section .contact_details #based_in{
+   margin : 20px 0 ;
+}
+
+main section .contact_details #social_contact a i{
+    font-size:2vw ;
+    margin-right:25px ;
+    color: black;
+}
+main section .contact_form{
+    width: 58%;
+}
+main section .contact_form p {
+    text-transform: capitalize;
+    font-size: 4vw;
+    margin : 20px 0 ;
+}
+main section .contact_form form  #st_details{
+    display: flex;
+    flex-direction: row;
+}
+main section .contact_form form  #st_details #st_name , 
+main section .contact_form form  #st_details #st_email{
+    width: 48% ;
+}
+main section .contact_form form  #st_details #st_message{
+    width: 90% ;
+}
+main section .contact_form form  input , 
+main section .contact_form form  textarea{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+  main section .contact_form form  textarea{
+    width: 90%; 
+    display: block;
+  }
+  main section .contact_form form  button{
+      width:20% ;
+      color: white;
+      background-color: black;
+      border: 0;
+      border-radius: 15px;
+      padding : 8px 15px ;
+      font-size: 0.8vw;
+      margin-top : 30px
+  }
+  @media only screen and (max-width: 60rem) {
+    main section{
+        width :70% ;
+        margin : auto ;
+        flex-direction: column-reverse;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+       
+    }
+    main section .contact_details{
+        width: 90%;   
+        margin:20px ;
+        padding : 20px 5px ;  
+    }
+    main section .contact_details #email p ,
+    main section .contact_details #based_in p{
+        font-size:3vw ;
+   
+     }
+    main section .contact_details #social_contact a i{
+        font-size:4vw ;
+    }
+    main section .contact_form{
+        width: 90%;
+        margin:20px ;
+        padding : 20px 5px ;  
+       
+    }
+    main section .contact_form p {
+        text-transform: capitalize;
+        font-size: 7vw;
+        margin : 20px 0 ;
+    }
+    main section .contact_form form  #st_details{
+        flex-direction: column;
+    }
+    main section .contact_form form  #st_details #st_name , 
+    main section .contact_form form  #st_details #st_email{
+          width: 90% ;
+          margin: 10px 0
+     }
+     main section .contact_form form  button{
+        width:30% ;
+        border-radius: 15px;
+        padding : 8px 15px ;
+        font-size: 2vw;
+        margin-top : 30px
+    }
+
+  }
+
+  
